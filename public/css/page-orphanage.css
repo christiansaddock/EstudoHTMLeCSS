@@ -3,48 +3,6 @@
     min-height:100vh;
 }
 
-aside.sidebar{
-    position:fixed;
-    height: 100%;
-    padding: 32px 24px; /* 3.2rem; */
-    background: #15c3d6;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-
-    z-index: 2;
-}
-
-aside.sidebar footer button{
-    width:48px;
-    height: 48px;
-    border: none;
-    background: #12afcb;
-    border-radius: 1.6rem;
-    cursor: pointer;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    transition: background-color 200ms;
-    /*para funcionar o transition é preciso colocar o comando abaixo de quando fará isso, no caso aqui é o hover*/
-}
-
-aside.sidebar footer button:hover{
-    background: #4d6f80;
-}
-
-.with-sidebar{
-    padding-left: 110px;
-}
-
-main{
-    flex: 1;
-}
-
 /*detalhes*/
 .orphanage-details{
     width:70rem;
@@ -89,6 +47,11 @@ main{
     opacity: 1;
 }
 
+.images button:focus{
+    outline: none;
+    border: 3px solid rgb(26, 209, 26);
+}
+
 .images button img{
     width:100%;
     height: 8.8rem;
@@ -110,34 +73,6 @@ main{
     color: #5c8599;    
     line-height: 1.6;
     margin-top: 2.4rem;
-}
-
-/*mapa*/
-.map-container{
-    margin-top:6.4rem;
-    background: #e6f7fb;
-    border: 1px solid #b3dae2;
-    border-radius: 2rem;
-}
-
-#mapid{
-    width:100%;
-    height:28rem;
-}
-
-.map-container footer{
-    padding: 2rem 0;
-    text-align: center;
-}
-
-.map-container footer a{
-    color: #0089a5;
-    text-decoration: none;
-}
-
-.map-container .leaflet-container{
-    border-bottom: 1px solid #dde3f0;
-    border-radius: 2rem;;
 }
 
 .orphanage-details-content hr{
@@ -190,34 +125,4 @@ main{
     box-sizing: border-box;
     border-radius: 20px;
     color: #37c77f;
-}
-
-.primary-button{
-    margin-top: 6.4rem;
-
-    width: 100%;
-    height: 6.4rem;
-    border 0;
-
-    cursor: pointer;
-
-    background: #3cdc8c;
-
-    border-radius: 2rem;
-    color: white;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    transition: background-color 200ms;
-    /*para funcionar o transition é preciso colocar o comando abaixo de quando fará isso, no caso aqui é o hover*/
-}
-
-.primary-button:hover{
-    background: #36cf82;
-}
-
-.primary-button img{
-    margin-right: 1.6rem;
 }

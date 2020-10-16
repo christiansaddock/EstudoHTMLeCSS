@@ -1,0 +1,42 @@
+
+aside.sidebar{
+    position:fixed;
+    height: 100%;
+    padding: 32px 24px; /* 3.2rem; */
+    background: #15c3d6;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    z-index: 2;
+}
+
+aside.sidebar footer button{
+    width:48px;
+    height: 48px;
+    border: none;
+    background: #12afcb;
+    border-radius: 1.6rem;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: background-color 200ms;
+    /*para funcionar o transition é preciso colocar o comando abaixo de quando fará isso, no caso aqui é o hover*/
+}
+
+aside.sidebar footer button:hover{
+    background: #4d6f80;
+}
+
+.with-sidebar{
+    padding-left: 110px;
+}
+
+main{
+    flex: 1;
+}
