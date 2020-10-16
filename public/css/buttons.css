@@ -17,6 +17,8 @@
     align-items: center;
     justify-content: center;
 
+    outline: none;
+
     transition: background-color 200ms;
     /*para funcionar o transition é preciso colocar o comando abaixo de quando fará isso, no caso aqui é o hover*/
 }
